@@ -1,11 +1,12 @@
 $('button').on('click', function() {
-    var h = $('#h').val()
-    var w = $('#w').val()
+    var n = $('#n').val()
+    var a = 0
+    var b = 0
 
-    h = Number(h) / 100
-    w = Number(w)
+    for (var i = 2; i < (Number(n) - 1); i++) { a = a + (i * (i - 1) / 2) }
+    for (var i = 2; i < (Number(n) + 1); i++) { b = b + (i * (i - 1) / 2) }
 
-    bmi = w / (h * h)
 
-    $('#bmi').val(bmi)
+    $('#a').val(a)
+    $('#b').val(b)
 })
