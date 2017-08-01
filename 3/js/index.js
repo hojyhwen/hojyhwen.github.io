@@ -24,7 +24,7 @@ var dealFive = function() {
             allpoker[r] = temp
         }
 
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 15; i++) {
             changeCard(i, allpoker[i])
         }
 
